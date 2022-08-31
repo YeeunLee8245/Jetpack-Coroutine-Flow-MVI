@@ -45,7 +45,7 @@ dependencies {
     )
   )
 
-  // App 모듈이 의존하는 상위 모듈(상위 모듈이 히위 모듈인 App의 객체 사용)
+  // App 모듈이 의존하는 상위 모듈(App 모듈의 객체는 다른 상위 모듈에 의존하여 의존성 주입햣)
   // ~ implementation을 하면 상위 모듈에 변경사항이 있을 때 해당 모듈까지만 빌드하면 됨(impl말고 api 사용하면 이어져 있는 하위 모듈 전부 빌드)
   implementation(domain)
   implementation(data)
